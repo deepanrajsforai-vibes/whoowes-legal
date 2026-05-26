@@ -110,33 +110,36 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 .topnav a.active { color: var(--fg); }
 
 /* ============================================================
-   Landing — full-width hero, asymmetric grid
+   Landing — full-width hero, asymmetric grid, fills viewport
    ============================================================ */
 .hero {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 96px 32px 64px;
+  padding: 64px 32px;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 64px;
-  align-items: start;
+  gap: 96px;
+  align-items: center;
+  /* Fill viewport minus top bar (~61px) and footer (~120px) so the
+     landing feels balanced on tall screens instead of clumping at top. */
+  min-height: calc(100vh - 61px - 130px);
 }
 
 .hero-headline {
-  font-size: 56px;
-  line-height: 1.05;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.04;
   letter-spacing: -0.03em;
   font-weight: 700;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
 }
 
 .hero-headline .accent { color: var(--accent); }
 
 .hero-sub {
-  font-size: 19px;
-  line-height: 1.5;
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.55;
   color: var(--muted);
-  margin: 0 0 32px;
+  margin: 0;
   max-width: 540px;
 }
 
@@ -355,11 +358,11 @@ footer.site-footer {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 64px 20px 48px;
+    gap: 40px;
+    padding: 64px 20px;
+    min-height: auto; /* no viewport-fill on mobile; let content flow */
+    align-items: start;
   }
-  .hero-headline { font-size: 40px; }
-  .hero-sub { font-size: 17px; }
 
   .legal {
     grid-template-columns: 1fr;
@@ -375,7 +378,6 @@ footer.site-footer {
 }
 
 @media (max-width: 480px) {
-  .hero-headline { font-size: 32px; }
   .legal-title { font-size: 28px; }
   .legal-body h2 { font-size: 22px; }
   .topnav { display: none; } /* hide nav on small screens, brand-only */
