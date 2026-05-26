@@ -16,4 +16,4 @@ Plain static HTML + CSS. Edit the `.html` files directly. Cloudflare auto-deploy
 
 ## License
 
-Content licensed for the WhoOwes project only. Source structure © Nebula Corp.
+Content licensed for the WhoOwes project only. Source structure © WhoOwes Team.

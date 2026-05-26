@@ -3,32 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WhoOwes</title>
-<meta name="description" content="WhoOwes — split expenses with friends. Free and online-first.">
+<title>WhoOwes — Split expenses with friends</title>
+<meta name="description" content="WhoOwes is a free, online-first app for splitting expenses with friends and groups. Settle balances without ads or fees.">
+<meta name="theme-color" content="#2e7d4f">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <header>
-    <h1><a href="/">WhoOwes</a></h1>
-    <p>Split expenses with friends. Free and online-first.</p>
-  </header>
 
-  <p class="lead">A simple, free way to settle balances with friends and groups.</p>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">W</span>
+      <span>WhoOwes</span>
+    </a>
+    <nav class="topnav">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:support@whoowes.app">Support</a>
+    </nav>
+  </div>
+</header>
 
-  <h2>Legal</h2>
-  <ul>
-    <li><a href="/privacy">Privacy Policy</a></li>
-    <li><a href="/terms">Terms of Service</a></li>
-  </ul>
+<section class="hero">
+  <div>
+    <h1 class="hero-headline">Split expenses with friends. <span class="accent">Without the fee.</span></h1>
+    <p class="hero-sub">WhoOwes is a free, online-first app for tracking shared expenses and settling balances between friends and groups. No ads. No premium tier. Just the math, done right.</p>
+  </div>
 
-  <h2>Support</h2>
-  <p>Questions or account help: <a href="mailto:support@whoowes.app">support@whoowes.app</a></p>
+  <aside class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Status</span>
+      <span class="hero-meta-value">Beta · iOS &amp; Android</span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Privacy</span>
+      <span class="hero-meta-value"><a href="/privacy">Privacy Policy</a></span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Terms</span>
+      <span class="hero-meta-value"><a href="/terms">Terms of Service</a></span>
+    </div>
+    <div class="hero-meta-item">
+      <span class="hero-meta-label">Support</span>
+      <span class="hero-meta-value"><a href="mailto:support@whoowes.app">support@whoowes.app</a></span>
+    </div>
+  </aside>
+</section>
 
-  <footer>
-    <p>&copy; <span id="year">2026</span> WhoOwes. All rights reserved.</p>
-  </footer>
-</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>WhoOwes</strong>
+      <span>&copy; <span id="year">2026</span> WhoOwes Team. All rights reserved.</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:support@whoowes.app">Contact</a>
+    </div>
+  </div>
+</footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

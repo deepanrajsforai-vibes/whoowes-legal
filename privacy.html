@@ -4,27 +4,192 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — WhoOwes</title>
-<meta name="description" content="WhoOwes privacy policy.">
+<meta name="description" content="How WhoOwes collects, uses, and protects your data.">
+<meta name="theme-color" content="#2e7d4f">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <header>
-    <h1><a href="/">WhoOwes</a></h1>
-    <nav>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">W</span>
+      <span>WhoOwes</span>
+    </a>
+    <nav class="topnav">
+      <a href="/privacy" class="active">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:support@whoowes.app">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="legal">
+
+  <div class="legal-header">
+    <div class="legal-eyebrow">Legal</div>
+    <h1 class="legal-title">Privacy Policy</h1>
+    <div class="legal-updated">Last updated: May 26, 2026</div>
+  </div>
+
+  <aside class="toc" aria-label="On this page">
+    <div class="toc-label">On this page</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-collect">Data we collect</a></li>
+      <li><a href="#how-we-use">How we use it</a></li>
+      <li><a href="#sharing">Sharing</a></li>
+      <li><a href="#retention">Retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#your-rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#international">International transfers</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <div class="legal-body">
+
+    <h2 id="overview">Overview</h2>
+    <p>WhoOwes ("we", "us", "our") is an independent mobile application that helps individuals track and settle shared expenses with friends and groups. WhoOwes is operated by the WhoOwes Team — an independent developer working on the app as a personal project. This Privacy Policy explains what information we collect, why we collect it, how we use and share it, and the rights you have over your data.</p>
+    <p>By using WhoOwes, you agree to the practices described in this Policy. If you do not agree, please do not use the app.</p>
+
+    <h2 id="data-we-collect">Data we collect</h2>
+
+    <h3>Information you provide directly</h3>
+    <ul>
+      <li><strong>Account information.</strong> When you sign up, we collect your name, email address, and (if you use that sign-in method) your phone number. Profile photo URLs may be received from your sign-in provider.</li>
+      <li><strong>Authentication identifiers.</strong> Depending on the sign-in method you choose: a Google account ID, an Apple Sign-In identifier, a Firebase user ID for email/password sign-in, or a WhatsApp-verified phone number. We do not receive or store your passwords for Google, Apple, or WhatsApp sign-in.</li>
+      <li><strong>Payment references (optional).</strong> If you add a UPI Virtual Payment Address (VPA) to your profile, we store the VPA string so you can be paid by other users. We never see, process, or store actual payment amounts or bank credentials — settlements happen in your UPI app, not in WhoOwes.</li>
+      <li><strong>Expense data you create.</strong> Expense descriptions, amounts, dates, categories, attachments (receipts), the people involved, who paid, how the cost is split, and any notes on settlements.</li>
+      <li><strong>Group and friendship data.</strong> Groups you create or join, the members of those groups, and the friend relationships you establish.</li>
+      <li><strong>Support communications.</strong> If you email support, we retain the message and our reply.</li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul>
+      <li><strong>Device push notification token.</strong> When you allow notifications, we receive and store an Expo / FCM / APNs push token tied to your device so we can send you alerts about new expenses, settlements, and group activity.</li>
+      <li><strong>Session tokens.</strong> A randomly generated session token is stored locally on your device and on our server to keep you signed in.</li>
+      <li><strong>Basic technical data.</strong> When the app calls our backend, our hosting provider receives standard request metadata (IP address, request time, user-agent). We do not use this for tracking or profiling.</li>
+    </ul>
+
+    <h3>Information from your device (with permission)</h3>
+    <ul>
+      <li><strong>Contacts (optional).</strong> If you use the "Add from Contacts" feature, the app reads contact entries on your device only at the moment you tap the picker. Phone numbers you select are sent to our backend to look up existing WhoOwes users or to invite new ones. Other contacts in your address book are not uploaded.</li>
+      <li><strong>Camera and photos (optional).</strong> If you attach a receipt to an expense, you can capture a photo with the camera or pick an image from your library. Only the file you select is uploaded.</li>
+      <li><strong>Notifications.</strong> If you grant notification permission, you will receive push notifications about activity relevant to you.</li>
+    </ul>
+
+    <h3>Information we do <strong>not</strong> collect</h3>
+    <ul>
+      <li>We do not collect your precise location.</li>
+      <li>We do not include third-party advertising SDKs or trackers.</li>
+      <li>We do not sell your data.</li>
+      <li>We do not use cookies on the app (only on this website, where they are limited to functional purposes — see <a href="#cookies">Cookies</a>).</li>
+    </ul>
+
+    <h2 id="how-we-use">How we use it</h2>
+    <ul>
+      <li><strong>To operate the app:</strong> sign you in, save your expenses, calculate balances, settle debts, send invitations, and sync data across your devices.</li>
+      <li><strong>To send notifications:</strong> alert you to new expenses, settlements, and group activity (only via push, only if enabled).</li>
+      <li><strong>To match contacts:</strong> when you use the contacts picker, to find friends who are already on WhoOwes.</li>
+      <li><strong>To support you:</strong> respond to questions and resolve account issues.</li>
+      <li><strong>To keep the service safe:</strong> detect abuse and prevent unauthorized access.</li>
+      <li><strong>To comply with the law:</strong> respond to valid legal requests where required.</li>
+    </ul>
+
+    <p>We rely on the following legal bases under the EU/UK GDPR, where applicable: <strong>contract</strong> (to provide the service you signed up for), <strong>legitimate interests</strong> (to keep the service secure and improve it), <strong>consent</strong> (for optional features like notifications and contacts access), and <strong>legal obligation</strong> (where required).</p>
+
+    <h2 id="sharing">Sharing</h2>
+    <p>We share your information only in these specific cases:</p>
+    <ul>
+      <li><strong>Other users you interact with.</strong> Friends and group members see your name, profile photo, and the shared expenses, settlements, and balances between you. Your email and phone number are visible to friends you are connected to.</li>
+      <li><strong>Service providers we rely on.</strong> We use third-party processors strictly to operate the app:
+        <ul>
+          <li><strong>Convex</strong> — our backend database and serverless function host. Your account data, expenses, and settlements are stored on Convex's infrastructure.</li>
+          <li><strong>Firebase Authentication (Google)</strong> — for email/password sign-in.</li>
+          <li><strong>Google Identity Services</strong> — for Sign in with Google.</li>
+          <li><strong>Apple</strong> — for Sign in with Apple (iOS).</li>
+          <li><strong>WhatsApp Business Platform (Meta)</strong> — for WhatsApp sign-in via OTP. The phone number you verify is shared with Meta only for the purpose of delivering the verification message.</li>
+          <li><strong>Expo / FCM / APNs</strong> — to deliver push notifications.</li>
+          <li><strong>Cloudflare</strong> — to host this website.</li>
+        </ul>
+        Each processor handles your data under its own privacy terms. We share with them only what is necessary to operate the feature involved.</li>
+      <li><strong>Legal requests.</strong> If we receive a valid legal order, we may disclose information to the extent required by law.</li>
+      <li><strong>Corporate transactions.</strong> If WhoOwes is sold or merged, your data may transfer to the successor entity. We will notify you before any such transfer.</li>
+    </ul>
+
+    <p>We do <strong>not</strong> share your data with advertisers, data brokers, or for marketing purposes.</p>
+
+    <h2 id="retention">Retention</h2>
+    <ul>
+      <li><strong>Account data</strong> is retained for as long as your account is active.</li>
+      <li><strong>Expense and settlement records</strong> are retained for as long as the related group or friendship exists, since other users may rely on the same record.</li>
+      <li><strong>Session tokens</strong> expire on their own and are removed when you sign out.</li>
+      <li><strong>Push tokens</strong> are removed when you disable notifications, sign out, or uninstall the app.</li>
+      <li><strong>Support emails</strong> are retained for up to two years.</li>
+      <li><strong>Backups</strong> may persist for up to 30 days after deletion.</li>
+    </ul>
+    <p>When you delete your account (see "Your rights"), we delete your personal profile and disconnect you from groups. Shared expense records remain accessible to the other participants who created or settled them, with your identity anonymized.</p>
+
+    <h2 id="security">Security</h2>
+    <p>We use industry-standard technical and organizational measures to protect your data, including TLS encryption in transit, encrypted storage on our backend infrastructure, and access controls limiting who can reach production systems.</p>
+    <p>No system is perfectly secure. You are responsible for keeping your sign-in credentials safe. If you believe your account has been compromised, please contact us immediately.</p>
+
+    <h2 id="your-rights">Your rights</h2>
+    <p>Depending on where you live, you may have some or all of the following rights:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+      <li><strong>Correction</strong> — fix inaccurate or incomplete information. You can edit your name and UPI VPA directly in the app under Account.</li>
+      <li><strong>Deletion</strong> — request that we delete your account and the personal data associated with it.</li>
+      <li><strong>Restriction or objection</strong> — ask us to limit how we use your data.</li>
+      <li><strong>Portability</strong> — receive your data in a portable format.</li>
+      <li><strong>Withdraw consent</strong> — turn off notifications, revoke contacts permission, or stop using the app at any time.</li>
+      <li><strong>Complaint</strong> — lodge a complaint with your local data protection authority.</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href="mailto:support@whoowes.app">support@whoowes.app</a> from the email address on your account. We respond within 30 days.</p>
+
+    <p>If you are a California resident, you also have the rights described under the CCPA/CPRA, including the right to know what we collect, the right to delete, the right to correct, and the right to opt out of sale or sharing of personal information (we do not sell or share your personal information for cross-context behavioral advertising).</p>
+
+    <h2 id="children">Children</h2>
+    <p>WhoOwes is not directed at children under 13 (or 16 in the EU/UK). We do not knowingly collect personal information from children. If you believe a child has provided us their information, contact us and we will delete it.</p>
+
+    <h2 id="international">International transfers</h2>
+    <p>Your data may be processed in countries other than where you live. We rely on standard contractual clauses and our processors' compliance frameworks where required by applicable law (including GDPR Article 46 safeguards).</p>
+
+    <h2 id="cookies">Cookies (this website)</h2>
+    <p>This website (<code>whoowes-legal.pages.dev</code>) uses no cookies and no analytics. Cloudflare, our hosting provider, may log standard request metadata at the network level — see Cloudflare's privacy policy for details.</p>
+
+    <h2 id="changes">Changes</h2>
+    <p>We may update this Policy from time to time. The "Last updated" date at the top reflects the most recent change. If we make a material change, we will notify you in-app or by email before it takes effect.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>If you have any questions about this Policy or your data:</p>
+    <p>
+      Email: <a href="mailto:support@whoowes.app">support@whoowes.app</a><br>
+      Operated by: WhoOwes Team
+    </p>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>WhoOwes</strong>
+      <span>&copy; <span id="year">2026</span> WhoOwes Team. All rights reserved.</span>
+    </div>
+    <div class="footer-links">
       <a href="/">Home</a>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
-    </nav>
-  </header>
+      <a href="mailto:support@whoowes.app">Contact</a>
+    </div>
+  </div>
+</footer>
 
-  <h2>Privacy Policy</h2>
-  <p class="muted">Placeholder — to be replaced with the Termly-generated policy.</p>
-  <p>This page will contain the WhoOwes Privacy Policy describing what data we collect, how we use it, how we share it, your rights, and how to contact us.</p>
-
-  <footer>
-    <p>Questions: <a href="mailto:support@whoowes.app">support@whoowes.app</a></p>
-  </footer>
-</main>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
